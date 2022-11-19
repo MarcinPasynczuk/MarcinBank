@@ -1,4 +1,6 @@
 
+import java.io.File;
+import java.io.IOException;
 import java.util.Objects;
 import java.util.Scanner;
 
@@ -19,19 +21,50 @@ while(true) {
 
     if (Objects.equals(input, "yes")) {
             System.out.println("Please put your ACCOUNT NUMBER to log in:");
+        String accountNumber = sc.nextLine();
 
+        try {
+            String text = "src/" + accountNumber;
+            File myObj = new File(text +"Account.java");
+            if (myObj.createNewFile()) {
+                System.out.println("File created: " + myObj.getName());
+            } else {
+                System.out.println("File already exists.");
+            }
+        } catch (IOException e) {
+            System.out.println("An error occurred.");
+            e.printStackTrace();
+        }
+
+        if (Objects.equals(accountNumber, marcinAccount.getAccountNumber())){
             System.out.println("Please put your PASSWORD to log in:");
             String password = sc.nextLine();
             if (Objects.equals(password, marcinAccount.getPassword())){
-        System.out.println(marcinAccount.getPassword());
-        System.out.println(password);}
+                // When acc number and password from marcinAccount is correct then:
+                System.out.println("Hello, " + marcinAccount.getCustomerName()+ " what would like to do? deposit/withdraw");
+                System.out.println("no working from now, it is in progress to my future -> do next comand while to back there imho");
+
+
+
+
+
+                // When acc number and password from marcinAccount is correct then do code up
+            }
             else {
                 System.out.println("WRONG PASSWORD!");
                 System.out.println(marcinAccount.getPassword());
+                System.out.println("marcin" + "Account.getPassword()");
                 System.out.println(password);
             }
 
     }
+        else {
+            System.out.println("WRONG ACCOUNT NUMBER");
+
+        }
+
+    }
+
 
     //here is starting registration
     else {
