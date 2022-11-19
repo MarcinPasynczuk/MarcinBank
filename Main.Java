@@ -1,5 +1,6 @@
 
 import java.io.File;
+import java.io.FilenameFilter;
 import java.io.IOException;
 import java.util.Objects;
 import java.util.Scanner;
@@ -22,19 +23,6 @@ while(true) {
     if (Objects.equals(input, "yes")) {
             System.out.println("Please put your ACCOUNT NUMBER to log in:");
         String accountNumber = sc.nextLine();
-
-        try {
-            String text = "src/" + accountNumber;
-            File myObj = new File(text +"Account.java");
-            if (myObj.createNewFile()) {
-                System.out.println("File created: " + myObj.getName());
-            } else {
-                System.out.println("File already exists.");
-            }
-        } catch (IOException e) {
-            System.out.println("An error occurred.");
-            e.printStackTrace();
-        }
 
         if (Objects.equals(accountNumber, marcinAccount.getAccountNumber())){
             System.out.println("Please put your PASSWORD to log in:");
@@ -99,15 +87,5 @@ while(true) {
 
     }
 }}
-
-
-
-//        bankAccount marcinAccount = new bankAccount(12345, 0.00, "Marcin", "email@gmail.com", "098272");
-//
-//        marcinAccount.getBalance();
-//        marcinAccount.deposit(55);
-//        marcinAccount.getBalance();
-
-
 
 }
