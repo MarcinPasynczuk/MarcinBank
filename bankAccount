@@ -20,12 +20,13 @@ public class bankAccount{
 
     }
 
-    public bankAccount(String customerName, String email, String password) {
-        this.customerName = customerName;
-        this.email = email;
-        this.password = password;
+    public bankAccount(int accountNumber, double balance) {
+
         this.accountNumber = 12345;
         this.balance = 0.00;
+    }
+
+    public bankAccount(int loginNumber, String password) {
     }
 
     // Getter & Setter accountNumber
@@ -92,6 +93,13 @@ public class bankAccount{
 
     }
 
+
+
+
+
+
+
+}
 
 
 
