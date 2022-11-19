@@ -1,3 +1,5 @@
+import java.util.Objects;
+
 public class bankAccount{
     private int accountNumber;
     private double balance;
@@ -5,10 +7,29 @@ public class bankAccount{
     private String email;
     private String password;
 
-    public bankAccount(){
+    private String accountName;
+
+    String dupa = "marcin" + "Account.getCustomerName()";
+
+    public bankAccount(String accountName, String password){
+        if (Objects.equals(accountName, dupa) && Objects.equals(password, marcinAccount.getPassword())){
+            System.out.println("działą");
+        }
     }
 
 
+
+    public void setBalance(double balance) {
+        this.balance = balance;
+    }
+
+    public String getAccountName() {
+        return accountName;
+    }
+
+    public void setAccountName(String accountName) {
+        this.accountName = accountName;
+    }
 
     public bankAccount(int accountNumber, double balance, String customerName, String email, String password){
         System.out.println("done");
@@ -92,17 +113,4 @@ public class bankAccount{
         }
 
     }
-
-
-
-
-
-
-
 }
-
-
-
-
-
-
