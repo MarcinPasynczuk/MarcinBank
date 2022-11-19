@@ -18,12 +18,18 @@ while(true) {
 
 
     if (Objects.equals(input, "yes")) {
-//            System.out.println("Please put your ACCOUNT NUMBER to log in:");
-//            int loginNumber = Integer.parseInt(sc.nextLine());
-//            System.out.println("Please put your PASSWORD to log in:");
-//            String password = sc.nextLine();
-//            new bankAccount(loginNumber,password);
-//        System.out.println(newAccount.getPassword());
+            System.out.println("Please put your ACCOUNT NUMBER to log in:");
+
+            System.out.println("Please put your PASSWORD to log in:");
+            String password = sc.nextLine();
+            if (Objects.equals(password, marcinAccount.getPassword())){
+        System.out.println(marcinAccount.getPassword());
+        System.out.println(password);}
+            else {
+                System.out.println("WRONG PASSWORD!");
+                System.out.println(marcinAccount.getPassword());
+                System.out.println(password);
+            }
 
     }
 
@@ -71,3 +77,4 @@ while(true) {
 
 
 
+}
