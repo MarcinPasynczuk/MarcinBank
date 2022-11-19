@@ -9,10 +9,10 @@ public class bankAccount{
 
     private String accountName;
 
-    String dupa = "marcin" + "Account.getCustomerName()";
+
 
     public bankAccount(String accountName, String password){
-        if (Objects.equals(accountName, dupa) && Objects.equals(password, marcinAccount.getPassword())){
+        if (Objects.equals(accountName, marcinAccount.getName) && Objects.equals(password, marcinAccount.getPassword())){
             System.out.println("działą");
         }
     }
