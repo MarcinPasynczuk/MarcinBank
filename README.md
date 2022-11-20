@@ -1,6 +1,6 @@
 # Marcin Banking
 
-My banking system in Java. 
+My banking system in Java. 3.0 it's the final and last version. 
 
 ✓✓✓ Creating account system. It is saving profile in extrernal .txt file in src/ folder.
 
