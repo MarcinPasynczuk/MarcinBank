@@ -8,8 +8,8 @@ My banking system in Java. 3.0 it's the final and last version.
 
 ✓✓✓ Password request, if you will put 3 times wrong password, you will get 5 minutes of timeout.
 
-✓✓✓ Withdraws and deposit, all data will be stored in external file.
+✓✓✓ Withdraws and deposits, all data will be stored in external file.
 
-✓✓✓ Tranfers between accounts. Ofcourse it also storing all changes.
+✓✓✓ Transfers between accounts. It is also storing all changes.
 
 Thanks for a feedback. :)
