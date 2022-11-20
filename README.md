@@ -10,6 +10,6 @@ My banking system in Java.
 
 ✓✓✓ Withdraws and deposit, all data will be stored in external file.
 
-transfers and more.
+✓✓✓ Tranfers between accounts. Ofcourse it also storing all changes.
 
-Still in progress, a lot work to do. :)
+Thanks for a feedback. :)
